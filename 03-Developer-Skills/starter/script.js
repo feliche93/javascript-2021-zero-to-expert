@@ -2,9 +2,4 @@
 'use strict';
 
 
-
-const x = 23;
-
-let x = 'felix';
-
-if (x === 23) console.log(23);
+console.log('This is cool');
