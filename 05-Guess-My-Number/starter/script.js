@@ -16,16 +16,14 @@ const secretNumber = Math.floor(Math.random() * 20) + 1;
 let score = 20;
 
 const reload = function () {
-    document.querySelector('.score').textContent = 0;
+    document.querySelector('.score').textContent = 20;
     document.querySelector('.message').textContent = 'Start guessing...';
     document.querySelector('.number').textContent = '?';
     document.querySelector('body').style.backgroundColor = '#222';
     document.querySelector('.number').style.width = '15rem';
 }
 
-document.querySelector('.again').addEventListener('click', function () {
-    reload();
-});
+document.querySelector('.again').addEventListener('click', reload);
 
 
 document.querySelector('.check').addEventListener(
